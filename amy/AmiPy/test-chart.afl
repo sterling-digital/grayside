@@ -1,0 +1,16 @@
+_SECTION_BEGIN("test-chart.afl");
+
+filter = 1; /* all symbols and quotes accepted */
+
+AddColumn(Open,"Open",1.4);
+AddColumn(High,"High",1.4);
+AddColumn(Low,"Low",1.4);
+AddColumn(Close,"Close",1.4);
+AddColumn(Volume,"Volume",1.0);
+
+AddTextColumn(IndustryID(1),"Industry",77,colorBlack, colorPink );
+ 
+AddTextColumn(FullName(),"Name",77,colorBlack, IIf( Close > Open, colorBrightGreen, colorPink ));
+
+
+_SECTION_END();

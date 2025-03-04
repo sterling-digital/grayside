@@ -1,0 +1,11 @@
+_SECTION_BEGIN("test1.afl");
+
+PyLoadFromFile("test1.py", "C:\\AmiPy_Scripts\\test1.py");
+
+Close2 = PyEvalFunction("example1", "funct", Close);
+Diff = PyEvalFunction("example1", "diff", High, Low );
+
+Plot( Close, "Close", colorWhite );
+Plot( Close2, "Close + 2", colorBlue );
+
+_SECTION_END();
