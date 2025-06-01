@@ -10,20 +10,18 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 
 ### Solutions
 1. [Polygon.io](https://polygon.io/pricing) may be a good option. They are $200/mo for real-time data. Their API is attractive but they are not officially Amibroker supported (we would need to develop our own integration... much work work).
-2. Per Ref 1 above [see also Ref 3], "In order to use AmiBroker with any real-time data source you have to set up the database with appropriate data plug-in first. This is required only once at the database creation time. Instructions for setting up are available here: eSignal, ~~myTrack~~, IQFeed, QuoteTracker."
+2. Per Ref 1 above [see also Ref 3], "In order to use AmiBroker with any real-time data source you have to set up the database with appropriate data plug-in first. This is required only once at the database creation time. Instructions for setting up are available here: eSignal, ~~myTrack(defunct)~~, IQFeed, ~~QuoteTracker(limited )~~."
  - **eSignal**:
 	 - Has official AmiBroker [integration](https://www.amibroker.com/guide/h_esignal.html) 
 	 - Costs $228/month (Exchange Fees Not Included!) for streaming real-time data
 -  **IQFeed**:
 	- Has official AmiBroker [integration](https://www.amibroker.com/iqfeed.html)
 	- [Cool features](https://www.iqfeed.net/Amibroker/index.cfm?displayaction=data&section=services)
-	- Has a free-ish trial? [More info](https://www.iqfeed.net/Amibroker/index.cfm?displayaction=start)
+	- Has a free-ish trial (may incur exchange fees, see below) [More info](https://www.iqfeed.net/Amibroker/index.cfm?displayaction=start)
 	- [Pricing](https://www.iqfeed.net/Amibroker/index.cfm?displayaction=data&section=fees) is a little harder to pinpoint.
 		- Starts at $105/mo 
-		- Then everything is an addon
-			- 
-
+		- Then each exchange is an add-on (NASDAQ = $7.50/mo)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMzY0MzMxNiwtMTQ5Mzc1NDA3LDE3Nz
-AyNTU2MDFdfQ==
+eyJoaXN0b3J5IjpbLTczNzAyNDA5NSwxODMzNjQzMzE2LC0xND
+kzNzU0MDcsMTc3MDI1NTYwMV19
 -->
