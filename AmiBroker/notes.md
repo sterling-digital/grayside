@@ -1,7 +1,7 @@
 # Notes
 
 ## Real-Time Data Issue
-One of the main challenges right now is getting real-time data fed into AmiBorker. Most are 15-min delayed.
+One of the main challenges right now is getting real-time data fed into AmiBroker. Most are 15-min delayed.
 
 ### AmiBroker Reference Docs:
 1. [How to work with Real-Time data plugins](https://www.amibroker.com/guide/h_rtsource.html)
@@ -24,6 +24,6 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 
 END 6/1/25
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTIxNDUzMTYsMTgzMzY0MzMxNiwtMT
-Q5Mzc1NDA3LDE3NzAyNTU2MDFdfQ==
+eyJoaXN0b3J5IjpbMTg1MjE1Mjc1OCwxODMzNjQzMzE2LC0xND
+kzNzU0MDcsMTc3MDI1NTYwMV19
 -->
