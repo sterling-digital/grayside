@@ -10,8 +10,10 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 
 ### Solutions
 [Polygon.io](https://polygon.io/pricing) may be a good option. They are $200/mo for real-time data.
+Per Ref 1 above [], "In order to use AmiBroker with any real-time data source you have to set up the database with appropriate data plug-in first. This is required only once at the database creation time. Instructions for setting up are available here: eSignal, myTrack, IQFeed, QuoteTracker."
+- eSignal
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTQ4MTM3NzIsLTE0OTM3NTQwNywxNz
-cwMjU1NjAxXX0=
+eyJoaXN0b3J5IjpbLTYxNzQ1MDM1MywtMTQ5Mzc1NDA3LDE3Nz
+AyNTU2MDFdfQ==
 -->
