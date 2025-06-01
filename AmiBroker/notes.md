@@ -9,8 +9,8 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 [How to get quotes from various markets](https://www.amibroker.com/guide/h_quotes.html)
 
 ### Solutions
-
+Polygon.io may be a good
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MjU1NTE5LC0xNDkzNzU0MDcsMTc3MD
+eyJoaXN0b3J5IjpbMTEzODU4MDg3LC0xNDkzNzU0MDcsMTc3MD
 I1NTYwMV19
 -->
