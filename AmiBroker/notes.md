@@ -9,7 +9,8 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 [How to get quotes from various markets](https://www.amibroker.com/guide/h_quotes.html)
 
 ### Solutions
-The AmiBroker team recommends IQFeed as a data broker. They appear to have a relatively deep partnership with IQFeed, based on this page from the AmiBroker site.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTM3NTQwNywxNzcwMjU1NjAxXX0=
+eyJoaXN0b3J5IjpbMTc0MjU1NTE5LC0xNDkzNzU0MDcsMTc3MD
+I1NTYwMV19
 -->
