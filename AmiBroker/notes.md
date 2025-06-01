@@ -16,6 +16,7 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 	 - Costs $228/month (Exchange Fees Not Included!) for streaming real-time data
 -  **IQFeed**:
 	- Has official AmiBroker [integration](https://www.amibroker.com/iqfeed.html)
+	- [Cool features](https://www.iqfeed.net/Amibroker/index.cfm?displayaction=data&section=services)
 	- Has a free-ish trial? [More info](https://www.iqfeed.net/Amibroker/index.cfm?displayaction=start)
 	- [Pricing](https://www.iqfeed.net/Amibroker/index.cfm?displayaction=data&section=fees) is a little harder to pinpoint.
 		- Starts at $105/mo 
@@ -23,6 +24,6 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 			- 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyODU2MTA1LC0xNDkzNzU0MDcsMTc3MD
-I1NTYwMV19
+eyJoaXN0b3J5IjpbMTgzMzY0MzMxNiwtMTQ5Mzc1NDA3LDE3Nz
+AyNTU2MDFdfQ==
 -->
