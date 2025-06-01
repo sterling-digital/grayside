@@ -21,8 +21,9 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 	- [Pricing](https://www.iqfeed.net/Amibroker/index.cfm?displayaction=data&section=fees) is a little harder to pinpoint.
 		- Starts at $105/mo 
 		- Then each exchange is an add-on (NASDAQ = $7.50/mo)
+
 END 6/1/25
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNTk5NTY2NiwxODMzNjQzMzE2LC0xND
-kzNzU0MDcsMTc3MDI1NTYwMV19
+eyJoaXN0b3J5IjpbLTE1MTIxNDUzMTYsMTgzMzY0MzMxNiwtMT
+Q5Mzc1NDA3LDE3NzAyNTU2MDFdfQ==
 -->
