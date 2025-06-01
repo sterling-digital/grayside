@@ -10,7 +10,7 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 
 ### Solutions
 1. [Polygon.io](https://polygon.io/pricing) may be a good option. They are $200/mo for real-time data. Their API is attractive but they are not officially Amibroker supported (we would need to develop our own integration... much work work).
-2. Per Ref 1 above [see also Ref 3], "In order to use AmiBroker with any real-time data source you have to set up the database with appropriate data plug-in first. This is required only once at the database creation time. Instructions for setting up are available here: eSignal, ~~myTrack(defunct)~~, IQFeed, ~~QuoteTracker(limited )~~."
+2. Per Ref 1 above [see also Ref 3], "In order to use AmiBroker with any real-time data source you have to set up the database with appropriate data plug-in first. This is required only once at the database creation time. Instructions for setting up are available here: eSignal, IQFeed."
  - **eSignal**:
 	 - Has official AmiBroker [integration](https://www.amibroker.com/guide/h_esignal.html) 
 	 - Costs $228/month (Exchange Fees Not Included!) for streaming real-time data
@@ -22,6 +22,6 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 		- Starts at $105/mo 
 		- Then each exchange is an add-on (NASDAQ = $7.50/mo)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNzAyNDA5NSwxODMzNjQzMzE2LC0xND
+eyJoaXN0b3J5IjpbLTg2NDUyODY0MSwxODMzNjQzMzE2LC0xND
 kzNzU0MDcsMTc3MDI1NTYwMV19
 -->
