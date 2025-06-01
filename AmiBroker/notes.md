@@ -14,8 +14,9 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
  - eSignal:
 	 - Has official AmiBroker [integration](https://www.amibroker.com/guide/h_esignal.html) 
 	 - Costs $228/month (Exchange Fees Not Included!) for streaming real-time data
+-  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNjc1OTAxLC0xNDkzNzU0MDcsMTc3MD
-I1NTYwMV19
+eyJoaXN0b3J5IjpbLTEyNTA4OTAwMCwtMTQ5Mzc1NDA3LDE3Nz
+AyNTU2MDFdfQ==
 -->
