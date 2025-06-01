@@ -17,12 +17,12 @@ One of the main challenges right now is getting real-time data fed into AmiBorke
 -  **IQFeed**:
 	- Has official AmiBroker [integration](https://www.amibroker.com/iqfeed.html)
 	- Has a free-ish trial? [More info](https://www.iqfeed.net/Amibroker/index.cfm?displayaction=start)
-	- Pricing is a little harder to pinpoint.
+	- [Pricing](https://www.iqfeed.net/Amibroker/index.cfm?displayaction=data&section=fees) is a little harder to pinpoint.
 		- Starts at $105/mo 
 		- Then everything is an addon
 			- 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjQ2NzI0NzIsLTE0OTM3NTQwNywxNz
-cwMjU1NjAxXX0=
+eyJoaXN0b3J5IjpbLTIyODU2MTA1LC0xNDkzNzU0MDcsMTc3MD
+I1NTYwMV19
 -->
