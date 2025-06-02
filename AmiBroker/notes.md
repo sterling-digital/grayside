@@ -26,13 +26,12 @@ One of the main challenges right now is getting real-time data fed into AmiBroke
 - CBOE Indexes
 - Dow Jones Index
 - ISE
-- NASDAQ
+- NASDAQ (Use this during trial)
 - NASDAQ Mutual Funds
 - NYSE 
 - OPRA
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1MjUxMjYxNywtNTMwOTY2MTQxLDE4NT
-IxNTI3NTgsMTgzMzY0MzMxNiwtMTQ5Mzc1NDA3LDE3NzAyNTU2
-MDFdfQ==
+eyJoaXN0b3J5IjpbLTExNDQ5NjE2OCwtNDUyNTEyNjE3LC01Mz
+A5NjYxNDEsMTg1MjE1Mjc1OCwxODMzNjQzMzE2LC0xNDkzNzU0
+MDcsMTc3MDI1NTYwMV19
 -->
