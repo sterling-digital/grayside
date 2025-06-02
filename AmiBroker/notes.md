@@ -22,8 +22,14 @@ One of the main challenges right now is getting real-time data fed into AmiBroke
 		- Starts at $105/mo 
 		- Then each exchange is an add-on (NASDAQ = $7.50/mo)
 
-END 6/1/25
+### Exchanges
+- CBOE Index
+- CME
+- CME S&P Cash Index
+- Dow Jones Index
+- 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MjE1Mjc1OCwxODMzNjQzMzE2LC0xND
-kzNzU0MDcsMTc3MDI1NTYwMV19
+eyJoaXN0b3J5IjpbLTE4NzIwNjk3NSwxODUyMTUyNzU4LDE4Mz
+M2NDMzMTYsLTE0OTM3NTQwNywxNzcwMjU1NjAxXX0=
 -->
