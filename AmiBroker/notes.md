@@ -23,13 +23,16 @@ One of the main challenges right now is getting real-time data fed into AmiBroke
 		- Then each exchange is an add-on (NASDAQ = $7.50/mo)
 
 ### Exchanges
+- CBOE Indexes
 - Dow Jones Index
+- ISE
 - NASDAQ
 - NASDAQ Mutual Funds
-- NYSE
+- NYSE 
 - OPRA
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMDk2NjE0MSwxODUyMTUyNzU4LDE4Mz
-M2NDMzMTYsLTE0OTM3NTQwNywxNzcwMjU1NjAxXX0=
+eyJoaXN0b3J5IjpbLTQ1MjUxMjYxNywtNTMwOTY2MTQxLDE4NT
+IxNTI3NTgsMTgzMzY0MzMxNiwtMTQ5Mzc1NDA3LDE3NzAyNTU2
+MDFdfQ==
 -->
