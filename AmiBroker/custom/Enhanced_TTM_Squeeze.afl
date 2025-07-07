@@ -1,14 +1,14 @@
-_SECTION_BEGIN("Enhanced TTM Squeeze");
+_SECTION_BEGIN(\"Enhanced TTM Squeeze\");
 
 function Momentum(array, period) {
     return array - Ref(array, -period);
 }
 
-chanPeriod     = Param("Channel Period", 20);
-bolBandStdDev  = Param("Bollinger Band StdDev", 2);
-keltStdDev     = Param("Keltner Band StdDev", 1.5);
-momPeriod      = Param("Momentum Period", 12);
-momEMA         = Param("Momentum EMA Period", 5);
+chanPeriod     = Param(\"Channel Period\", 20);
+bolBandStdDev  = Param(\"Bollinger Band StdDev\", 2);
+keltStdDev     = Param(\"Keltner Band StdDev\", 1.5);
+momPeriod      = Param(\"Momentum Period\", 12);
+momEMA         = Param(\"Momentum EMA Period\", 5);
 
 // Calculate Bollinger Bands
 highBB = BBandTop(C, chanPeriod, bolBandStdDev);
@@ -19,8 +19,9 @@ centerLine = MA(C, chanPeriod);
 highKC  = centerLine + (keltStdDev * ATR(chanPeriod));
 lowKC   = centerLine - (keltStdDev * ATR(chanPeriod));
 
-// Calculate Squeeze condition
+// Calculate Squeeze conditions
 isSqueeze = (highBB < highKC) AND (lowBB > lowKC);
+isPreSqueeze = (highBB < highKC) OR (lowBB > lowKC);
 
 // Momentum Histogram
 momHist = EMA(Momentum(C, momPeriod), momEMA);
@@ -37,20 +38,20 @@ Buy = ExRem(Buy, Sell);
 Sell = ExRem(Sell, Buy);
 
 // Plot Histogram
-Plot(BBUp, "Momentum Up", colorBlue, styleHistogram | styleThick);
-Plot(BBDo, "Momentum Down", colorOrange, styleHistogram | styleThick);
-Plot(BBMid, "Momentum Mid", IIf(BBMid > 0, colorLightBlue, colorBrown), styleHistogram | styleThick);
+Plot(BBUp, \"Momentum Up\", colorBlue, styleHistogram | styleThick);
+Plot(BBDo, \"Momentum Down\", colorOrange, styleHistogram | styleThick);
+Plot(BBMid, \"Momentum Mid\", IIf(BBMid > 0, colorLightBlue, colorBrown), styleHistogram | styleThick);
 
 // Plot Buy/Sell signals
 PlotShapes(shapeSmallCircle * Buy, colorGreen, 0, 0, 10);
 PlotShapes(shapeSmallCircle * Sell, colorRed, 0, 0, -10);
 
-// Plot Squeeze Dots
-squeezeColor = IIf(isSqueeze, colorRed, colorGreen);
+// Plot Squeeze Dots (Red=Full Squeeze, Orange=Pre-Squeeze, Green=No Squeeze)
+squeezeColor = IIf(isSqueeze, colorRed, IIf(isPreSqueeze, colorOrange, colorGreen));
 PlotShapes(shapeSmallCircle, squeezeColor, 0, momHist, 0);
 
 // Squeeze Stats
 squeezeCount = BarsSince(isSqueeze AND NOT Ref(isSqueeze, -1));
-PlotText("Squeeze bars: " + WriteVal(squeezeCount), BarCount-5, momHist[BarCount-1], colorWhite);
+PlotText(\"Squeeze bars: \" + WriteVal(squeezeCount), BarCount-5, momHist[BarCount-1], colorWhite);
 
 _SECTION_END();
