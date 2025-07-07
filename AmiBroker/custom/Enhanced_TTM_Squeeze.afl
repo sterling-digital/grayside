@@ -1,0 +1,56 @@
+_SECTION_BEGIN("Enhanced TTM Squeeze");
+
+function Momentum(array, period) {
+    return array - Ref(array, -period);
+}
+
+chanPeriod     = Param("Channel Period", 20);
+bolBandStdDev  = Param("Bollinger Band StdDev", 2);
+keltStdDev     = Param("Keltner Band StdDev", 1.5);
+momPeriod      = Param("Momentum Period", 12);
+momEMA         = Param("Momentum EMA Period", 5);
+
+// Calculate Bollinger Bands
+highBB = BBandTop(C, chanPeriod, bolBandStdDev);
+lowBB  = BBandBot(C, chanPeriod, bolBandStdDev);
+
+// Calculate Keltner Channels
+centerLine = MA(C, chanPeriod);
+highKC  = centerLine + (keltStdDev * ATR(chanPeriod));
+lowKC   = centerLine - (keltStdDev * ATR(chanPeriod));
+
+// Calculate Squeeze condition
+isSqueeze = (highBB < highKC) AND (lowBB > lowKC);
+
+// Momentum Histogram
+momHist = EMA(Momentum(C, momPeriod), momEMA);
+
+// Define Breakouts
+BBUp  = IIf(highBB > highKC AND momHist > 0, momHist, 0);
+BBDo  = IIf(lowBB < lowKC AND momHist < 0, momHist, 0);
+BBMid = IIf(BBUp == 0 AND BBDo == 0, momHist, 0);
+
+// Buy and Sell Signals
+Buy = BBUp;
+Sell = BBDo;
+Buy = ExRem(Buy, Sell);
+Sell = ExRem(Sell, Buy);
+
+// Plot Histogram
+Plot(BBUp, "Momentum Up", colorBlue, styleHistogram | styleThick);
+Plot(BBDo, "Momentum Down", colorOrange, styleHistogram | styleThick);
+Plot(BBMid, "Momentum Mid", IIf(BBMid > 0, colorLightBlue, colorBrown), styleHistogram | styleThick);
+
+// Plot Buy/Sell signals
+PlotShapes(shapeSmallCircle * Buy, colorGreen, 0, 0, 10);
+PlotShapes(shapeSmallCircle * Sell, colorRed, 0, 0, -10);
+
+// Plot Squeeze Dots
+squeezeColor = IIf(isSqueeze, colorRed, colorGreen);
+PlotShapes(shapeSmallCircle, squeezeColor, 0, momHist, 0);
+
+// Squeeze Stats
+squeezeCount = BarsSince(isSqueeze AND NOT Ref(isSqueeze, -1));
+PlotText("Squeeze bars: " + WriteVal(squeezeCount), BarCount-5, momHist[BarCount-1], colorWhite);
+
+_SECTION_END();
